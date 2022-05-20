@@ -1,0 +1,30 @@
+
+<p id="sign-in-heading" class="txt-center">Log-In</p>
+
+<form action="users/sign-in" method="POST" id="sign-in-form">
+    <label for="email">
+        <font>Email</font> <i class="fas fa-level-down" style="position: relative; top: 4px;"></i>
+    </label><br>
+    <input type="email" required placeholder ="Email Address" id="email" name="email">
+
+    <label for="password">
+        <font>Password</font> <i class="fas fa-level-down" style="position: relative; top: 4px;"></i>
+    </label><br>
+    <input  minlength="4" maxlength="20"  id="password" type="password" placeholder="Enter Password" required name="password" class="reduce-wdith-for-see-password" > 
+
+    <i class="fas fa-eye fa-2x show-password-button" ></i>
+    <!-- fas fa-eye-slash show-password-button -->
+
+    <br>
+
+    <div class="bar-1">
+        <button type="submit" id="btn-log-in">
+            <i class="fas fa-sign-in"></i> Log-In
+        </button>
+    
+        <a href="/sign-up" id="sign-in-question">
+            Create a new account.
+        </a>
+    </div>
+</form>
+
